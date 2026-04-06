@@ -1,0 +1,26 @@
+{
+  "name": "modulo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "eslint": "^8.57.1",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "fastify": "^5.8.4",
+    "knex": "^3.2.9",
+    "sqlite3": "^6.0.1"
+  }
+}
