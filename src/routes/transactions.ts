@@ -41,14 +41,14 @@ export async function transactionsRoutes(app: FastifyInstance) {
 
       const { id } = getTransactionParamsSchema.parse(request.params);
 
-      const transactions = await db("transactions")
+      const transaction = await db("transactions")
         .where({
           session_id: sessionId,
           id,
         })
         .first();
 
-      return transactions;
+      return { transaction };
     },
   );
 
